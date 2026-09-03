@@ -79,7 +79,7 @@ _WN++_ se pronuncia como "wena plus plus": corto, chileno y fácil de escribir c
 
 El nombre mantiene la intención original del proyecto: un lenguaje tranquilo de leer, directo para aprender cómo funciona un intérprete por dentro, y con una identidad chilena que no se siente pegada encima.
 
-El `++` es un guiño a la idea de ir construyéndolo por capas: primero intérprete, después herramientas, bytecode, VM y todo lo que venga cuando el lenguaje se gane ese crecimiento.
+El `++` es un guiño a la idea de ir construyéndolo por capas: primero el pipeline base (lexer, parser, bytecode, VM), después herramientas, recolector de basura y todo lo que venga cuando el lenguaje se gane ese crecimiento.
 
 ## Para quién es
 
@@ -99,7 +99,7 @@ El intérprete está escrito en Rust, es deliberadamente simple, y cada fase del
 
 ## Estado actual
 
-El flujo completo — lexer, parser, AST e intérprete tree-walking — está implementado y funcional. Las siguientes fases — compilador a bytecode, VM y recolector de basura — están en la hoja de ruta. El detalle de cada fase está en [`docs/roadmap`](https://wnpp.cl/docs/roadmap).
+El flujo completo (lexer, parser, AST, compilador a bytecode y VM) está implementado y funcional. El recolector de basura sigue en la hoja de ruta. El detalle de cada fase está en [`docs/roadmap`](https://wnpp.cl/docs/roadmap).
 
 ## Construir desde el código fuente
 
